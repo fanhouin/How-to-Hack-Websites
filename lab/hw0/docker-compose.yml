@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+  text2emoji:
+    build:
+      context: ./app
+    ports:
+      - 5000:80/tcp

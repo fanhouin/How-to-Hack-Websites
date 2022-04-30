@@ -1,0 +1,1 @@
+module.exports = { FLAG: 'FLAG{3asy_p4th_tr4vers4l}' }

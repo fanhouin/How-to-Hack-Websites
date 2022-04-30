@@ -50,7 +50,7 @@
                         {% if item.0 == "FLAG" %}
                         <a class="button is-light is-fullwidth" title="No longer be sold" disabled>🥲</a>
                         {% else %}
-                        <a href="/item/{{id}}" class="button is-link is-light is-fullwidth">Buy it!</a>
+                        <a href="/cat-shop/item/{{id}}" class="button is-link is-light is-fullwidth">Buy it!</a>
                         {% endif %}
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                 {% for cat in session.stuff %}
                 <li>
                     You got a(n) <b>{{cat.0}}</b> 🐱
-                    {% if cat.0 == "FLAG" %}<code>FLAG{lab_flag}</code>{% endif %}
+                    {% if cat.0 == "FLAG" %}<code>FLAG{You_4re_s0_Rich_mE0w_MeoW}</code>{% endif %}
                 </li>
                 {% else %}
                     <p>You don't have any cat yet...</p>

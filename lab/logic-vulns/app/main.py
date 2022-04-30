@@ -6,7 +6,7 @@ app.secret_key = secrets.token_bytes()
 
 items = {5427: ("White Cat", 1024),
          5428: ("Orange Cat", 1024),
-         5429: ("Ranibow Cat", 4096),
+         5429: ("Rainbow Cat", 4096),
          5430: ("FLAG", 2147483648),
          5431: ("Evil Cat", 65536),
          5432: ("Null Cat", 0)}
@@ -31,10 +31,10 @@ def buy_item():
     cost = int(request.form.get("cost"))
     item_id = int(request.form.get("item_id"))
     if cost > session['money']:
-        return "<script>alert(`You don't have enough money Q_Q`); location.href='/';</script>"
+        return "<script>alert(`You don't have enough money Q_Q`); location.href='/cat-shop';</script>"
     session['money'] -= cost
     session['stuff'].append(items[item_id])
-    return "<script>alert(`Success!`); location='/'</script>"
+    return "<script>alert(`Success!`); location='/cat-shop'</script>"
 
 
 if __name__ == "__main__":

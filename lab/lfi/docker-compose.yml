@@ -8,7 +8,7 @@ services:
         ports:
             - 8400:80/tcp
         environment:
-            - FLAG=FLAG{lab_flag}
+            - FLAG=FLAG{Meow_mEow_meOw_meoW_E4sy_lfi}
     hakka-md:
         image: php:7.4-apache
         volumes:
